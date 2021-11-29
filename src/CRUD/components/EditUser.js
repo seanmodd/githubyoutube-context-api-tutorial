@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Form, FormGroup, Label, Input, Button, Navbar, Nav, NavItem, NavbarBrand, Container } from 'reactstrap';
-import { GlobalContext } from '../context/GlobalState';
+import { CrudContext } from '../context/CrudState';
 
 export const EditUser = (props) => {
-  const { editUser, users } = useContext(GlobalContext);
+  const { editUser, users } = useContext(CrudContext);
   const [selectedUser, setSelectedUser] = useState({
     id: '',
     name: '',

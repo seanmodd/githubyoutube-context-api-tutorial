@@ -7,10 +7,10 @@ const initialState = {
 };
 
 // Create Context
-export const GlobalContext = createContext(initialState);
+export const CrudContext = createContext(initialState);
 
 // Provider Component
-export const GlobalProvider = ({ children }) => {
+export const CrudProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   // Actions
@@ -36,7 +36,7 @@ export const GlobalProvider = ({ children }) => {
   };
 
   return (
-    <GlobalContext.Provider
+    <CrudContext.Provider
       value={{
         users: state.users,
         removeUser,
@@ -45,6 +45,6 @@ export const GlobalProvider = ({ children }) => {
       }}
     >
       {children}
-    </GlobalContext.Provider>
+    </CrudContext.Provider>
   );
 };

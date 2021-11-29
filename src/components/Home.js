@@ -1,4 +1,4 @@
-import { CartState } from '../Context';
+import { CartState } from '../CartContext';
 import SingleProduct from './SingleProduct';
 import { Heading } from '../CRUD/components/Heading';
 import { UserList } from '../CRUD/components/UserList';

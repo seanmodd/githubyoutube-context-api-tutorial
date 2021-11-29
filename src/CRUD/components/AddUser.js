@@ -2,11 +2,11 @@ import React, { useState, useContext } from 'react';
 import { v4 as uuid } from 'uuid';
 import { Link, useHistory } from 'react-router-dom';
 import { Form, FormGroup, Label, Input, Button, Navbar, Nav, NavItem, NavbarBrand, Container } from 'reactstrap';
-import { GlobalContext } from '../context/GlobalState';
+import { CrudContext } from '../context/CrudState';
 
 export const AddUser = () => {
   const [name, setName] = useState('');
-  const { addUser } = useContext(GlobalContext);
+  const { addUser } = useContext(CrudContext);
   const history = useHistory();
 
   const onSubmit = (e) => {

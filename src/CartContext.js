@@ -4,7 +4,7 @@ import faker from 'faker';
 const Cart = createContext();
 faker.seed(100);
 
-const Context = ({ children }) => {
+const CartContext = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const productsArray = [...Array(20)].map((p) => ({
@@ -25,4 +25,4 @@ const Context = ({ children }) => {
 
 export const CartState = () => useContext(Cart);
 
-export default Context;
+export default CartContext;

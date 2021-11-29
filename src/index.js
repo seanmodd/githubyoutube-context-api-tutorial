@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Context from './Context';
-import { GlobalProvider } from './CRUD/context/GlobalState';
+import CartContext from './CartContext';
+import { CrudProvider } from './CRUD/context/CrudState';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Context>
-      <GlobalProvider>
+    <CartContext>
+      <CrudProvider>
         <App />
-      </GlobalProvider>
-    </Context>
+      </CrudProvider>
+    </CartContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

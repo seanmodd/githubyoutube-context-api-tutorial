@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ListGroup, ListGroupItem, Button, Navbar, Nav, NavItem, NavbarBrand, Container } from 'reactstrap';
-import { GlobalContext } from '../context/GlobalState';
+import { CrudContext } from '../context/CrudState';
 
 export const UserList = () => {
-  const { users, removeUser } = useContext(GlobalContext);
+  const { users, removeUser } = useContext(CrudContext);
 
   return (
     <Navbar color="dark" dark>

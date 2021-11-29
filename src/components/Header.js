@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CartState } from '../Context';
+import { CartState } from '../CartContext';
 import './styles.css';
 
 const Header = () => {
