@@ -13,20 +13,20 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalProvider>
-      <Header />
-      <div className="App">
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/cart">
-          <Cart />
-        </Route>
-        <Switch>
-          <Route exact path="/crud" component={CRUD} />
-          <Route path="/add" component={AddUser} />
-          <Route path="/edit/:id" component={EditUser} />
-        </Switch>
-      </div>
+        <Header />
+        <div className="App">
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+          <Switch>
+            <Route exact path="/crud" component={CRUD} />
+            <Route path="/add" component={AddUser} />
+            <Route path="/edit/:id" component={EditUser} />
+          </Switch>
+        </div>
       </GlobalProvider>
     </BrowserRouter>
   );
