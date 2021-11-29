@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from "react";
-import faker from "faker";
+import { createContext, useContext, useState } from 'react';
+import faker from 'faker';
 
 const Cart = createContext();
 faker.seed(100);
@@ -23,8 +23,6 @@ const Context = ({ children }) => {
   );
 };
 
-export const CartState = () => {
-  return useContext(Cart);
-};
+export const CartState = () => useContext(Cart);
 
 export default Context;
