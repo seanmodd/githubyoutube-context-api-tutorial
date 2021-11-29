@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "no-console": 2,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 0,
+
+    "react/jsx-props-no-spreading": "off",
+    "import/order": "off",
+    "react/destructuring-assignment": "off",
+    "no-shadow": "off",
+    "no-case-declarations": "off",
+    "react/button-has-type": "off",
+    "no-unused-vars": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 2,
+      }
+    ]
+  }
+} // eslint-disable-line

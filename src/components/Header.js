@@ -13,6 +13,9 @@ const Header = () => {
           <Link to="/">Home Page</Link>
         </li>
         <li className="prod1">
+          <Link to="/crud">CRUD App</Link>
+        </li>
+        <li className="prod1">
           <Link to="/cart">Cart ({cart.length})</Link>
         </li>
       </ul>
